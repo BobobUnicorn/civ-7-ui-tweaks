@@ -1,0 +1,77 @@
+.ssb__button-icon.celebration {
+	top: .15rem;
+	left: .1rem;
+	pointer-events: none;
+	width: 2rem;
+	height: 2rem;
+	background-position: 55% 50%;
+	background-size: 53% 53%;
+	background-repeat: no-repeat no-repeat;
+	background-image: url("fs://game/celeb_happiness_icon.png");
+}
+
+.ssb__button.gov {
+    pointer-events: none;
+}
+
+.ssb__button-iconbg.gov {
+    pointer-events: auto;
+}
+
+.ssb__button-iconbg.celebration {
+	top: .15rem;
+	left: .1rem;
+	pointer-events: auto;
+	width: 2rem;
+	height: 2rem;
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-position: center;
+	transition: opacity 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.fxs-ring-meter.celebration {
+	position: absolute;
+	transform: translateY(75%);
+	width: 2.3rem;
+	height: 2.3rem;
+}
+
+.ssb__button.gov {
+    flex-flow: column;
+}
+
+.ssb__element.gov .fxs-ring-meter__ring-left,
+.ssb__element.gov .fxs-ring-meter__ring-right {
+	background-image: url("fs://game/govt_happ_circle_rad.png");
+}
+
+.gov .ssb-button__turn-counter {
+    top: 2.5888rem;
+    position: relative;
+}
+
+.gov .ssb-button__turn-counter-content {
+    position: absolute;
+    padding-top: .4rem;
+	width: 2.8888888889rem;
+	height: 2.8888888889rem;
+}
+
+.ssb__element:hover .ssb-button__turn-counter-bg,
+.ssb__element:active .ssb-button__turn-counter-bg,
+.ssb__element:focus .ssb-button__turn-counter-bg {
+	opacity: .8;
+}
+
+.gov .ssb-button__turn-counter-bg {
+    position: absolute;
+	height: 2.8888888889rem;
+	width: 1.7333333333rem;
+	background-size: 100% 100%;
+	opacity: .7;
+	background-repeat: no-repeat no-repeat;
+	background-position: center;
+    background-image: url("fs://game/core/shadow_diplo-ribbon-top.png");
+	transition: opacity 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
