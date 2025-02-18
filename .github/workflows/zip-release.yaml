@@ -1,8 +1,13 @@
-name: Create Archive
-on: [push]
+name: Release
+on:
+  push:
+    tags:
+    - '*'
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@master
     - name: Archive Release
@@ -11,3 +16,6 @@ jobs:
         type: 'zip'
         filename: 'bobobunicorn-ui-tweaks.zip'
         exclusions: '*.git*'
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "bobobunicorn-ui-tweaks.zip"
