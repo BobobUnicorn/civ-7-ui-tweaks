@@ -21,8 +21,8 @@ jobs:
       uses: thedoctor0/zip-release@0.7.5
       with:
         type: 'zip'
-        filename: 'bobobunicorn-ui-tweaks.zip'
+        filename: 'ui-tweaks.zip'
         path: 'UI_Tweaks'
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: "bobobunicorn-ui-tweaks.zip"
+        artifacts: "ui-tweaks.zip"
