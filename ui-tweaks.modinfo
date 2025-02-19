@@ -2,7 +2,7 @@
 <Mod id="bobobunicorn-ui-tweaks" version="2" xmlns="ModInfo">
 	<Properties>
 		<Name>UI Tweaks</Name>
-		<Description>Fixes some miscellaneous UI issues.</Description>
+		<Description>Fixes some miscellaneous UI issues, mainly focused around QOL.</Description>
 		<Authors>BobobUnicorn</Authors>
 		<Package>Mod</Package>
 		<AffectsSavedGames>0</AffectsSavedGames>
