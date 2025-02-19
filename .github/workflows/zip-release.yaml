@@ -10,12 +10,19 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@master
+    - name: Prepare Directory
+      shell: bash
+      run: |
+        shopt -s extglob
+        mkdir "UI_Tweaks"
+        mv !(*.git*) "UI_Tweaks"
+        shopt -u extglob
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.5
       with:
         type: 'zip'
         filename: 'bobobunicorn-ui-tweaks.zip'
-        exclusions: '*.git*'
+        path: 'UI_Tweaks'
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "bobobunicorn-ui-tweaks.zip"
