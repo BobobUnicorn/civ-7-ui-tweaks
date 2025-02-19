@@ -15,7 +15,7 @@ jobs:
       run: |
         shopt -s extglob
         mkdir "UI_Tweaks"
-        mv !(*.git*) "UI_Tweaks"
+        mv !(*.git*|UI_Tweaks) "UI_Tweaks"
         shopt -u extglob
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.5
