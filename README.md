@@ -11,6 +11,8 @@ Version compatibility: 1.0.3
 ![In Celebration](screenshots/celebration-active.png)
 ![Not in Celebration](screenshots/celebration-inactive.png)
 
+Note: it doesn't seem currently easily possible to determine which type of celebration bonus you've selected. This is marked as a future improvement.
+
 - adds an icon on the diplomacy ribbon when a civ is neutral toward you
 
 ![Diplomacy ribbon](screenshots/diplo-ribbon.png)
