@@ -7,3 +7,4 @@ Version compatibility: 1.0.3
 ## Currently Implemented
 
 - adds a visible countdown/counter for Celebrations
+- adds an icon on the diplomacy ribbon when a civ is neutral toward you

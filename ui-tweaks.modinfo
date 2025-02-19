@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="bobobunicorn-ui-tweaks" version="1" xmlns="ModInfo">
+<Mod id="bobobunicorn-ui-tweaks" version="2" xmlns="ModInfo">
 	<Properties>
 		<Name>UI Tweaks</Name>
 		<Description>Fixes some miscellaneous UI issues.</Description>
@@ -16,13 +16,23 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
-		<ActionGroup id="ui-tweaks" scope="game" criteria="always">
+		<ActionGroup id="sub-system-dock" scope="game" criteria="always">
 			<Properties>
 				<LoadOrder>100</LoadOrder>
 			</Properties>
 			<Actions>
 				<UIScripts>
 					<Item>modules/ui/sub-system-dock.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="diplo-ribbon-neutral" scope="game" criteria="always">
+			<Properties>
+				<LoadOrder>101</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>modules/ui/diplo-ribbon-neutral.js</Item>
 				</UIScripts>
 			</Actions>
 		</ActionGroup>
