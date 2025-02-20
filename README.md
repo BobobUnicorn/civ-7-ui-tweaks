@@ -18,3 +18,8 @@ Note: it doesn't seem currently easily possible to determine which type of celeb
 ![Diplomacy ribbon](screenshots/diplo-ribbon.png)
 
 - makes textboxes not show the caret unless focused (e.g. in the Join Code dialog)
+
+- fixes missing icons and text in Civ & Leader tooltips in the multiplayer & advanced setup screens
+
+![leader dropdown](screenshots/dropdown-leader.png)
+![civ dropdown](screenshots/dropdown-civ.png)
