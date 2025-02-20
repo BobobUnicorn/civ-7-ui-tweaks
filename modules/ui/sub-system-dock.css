@@ -1,12 +1,17 @@
 .ssb__button-icon.celebration {
 	top: .15rem;
-	left: .1rem;
+	left: .15rem;
 	pointer-events: none;
 	width: 2rem;
 	height: 2rem;
-	background-position: 55% 50%;
-	background-size: 53% 53%;
+	background-position: 50% 50%;
+	background-size: 50% 50%;
 	background-repeat: no-repeat no-repeat;
+	background-image: url("fs://game/Yield_Happiness.png");
+}
+
+.golden-age .ssb__button-icon.celebration {
+	background-size: 55% 55%;
 	background-image: url("fs://game/celeb_happiness_icon.png");
 }
 
@@ -47,7 +52,7 @@
 }
 
 .gov .ssb-button__turn-counter {
-    top: 2.5888rem;
+    top: 1.8888rem;
     position: relative;
 }
 
@@ -55,7 +60,7 @@
     position: absolute;
     padding-top: .4rem;
 	width: 2.8888888889rem;
-	height: 2.8888888889rem;
+	height: 1.8888888889rem;
 }
 
 .ssb__element:hover .ssb-button__turn-counter-bg,
@@ -66,12 +71,26 @@
 
 .gov .ssb-button__turn-counter-bg {
     position: absolute;
-	height: 2.8888888889rem;
+	height: 1.8888888889rem;
 	width: 1.7333333333rem;
 	background-size: 100% 100%;
 	opacity: .7;
 	background-repeat: no-repeat no-repeat;
 	background-position: center;
-    background-image: url("fs://game/core/shadow_diplo-ribbon-top.png");
+    background-image: url("fs://game/base_frame-bg.png");
 	transition: opacity 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.ssb-button__glow-bg {
+    position: absolute;
+	top: -.45rem;
+	left: -.4rem;
+	width: 3rem;
+	height: 3rem;
+	opacity: 0;
+	transition: opacity 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.golden-age .ssb-button__glow-bg {
+    opacity: 1;
 }

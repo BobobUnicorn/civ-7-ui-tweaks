@@ -60,6 +60,10 @@ extendClass(PanelSubSystemDock, {
         const celebrationIcon = createIconChip({
             modifierClass: 'celebration',
         });
+        const iconGlow = document.createElement('div');
+        iconGlow.classList.add('ssb-button__glow-bg', 'img-popup_icon_glow');
+        celebrationIcon.appendChild(iconGlow);
+
         celebrationRing.appendChild(turnCounter);
         celebrationRing.appendChild(celebrationIcon)
 
@@ -92,7 +96,9 @@ extendClass(PanelSubSystemDock, {
         if (localPlayerHappiness.isInGoldenAge()) {
             const goldenAgeTurnsLeft = localPlayerHappiness.getGoldenAgeTurnsLeft();
             this.celebrationRing.setAttribute('value', (goldenAgeTurnsLeft / 10 * 100).toString());
+            this.celebrationRing.classList.toggle('golden-age', true);
             this.updateTurnCounter(this.celebrationCounter, goldenAgeTurnsLeft);
+            this.celebrationCounter.classList.toggle('text-secondary', true);
         }
         else {
             const happinessPerTurn = localPlayerStats.getNetYield(YieldTypes.YIELD_HAPPINESS) ?? -1;
@@ -100,7 +106,9 @@ extendClass(PanelSubSystemDock, {
             const happinessTotal = Math.ceil(localPlayerStats.getLifetimeYield(YieldTypes.YIELD_HAPPINESS)) ?? -1;
             const turnsToNextGoldenAge = Math.ceil((nextGoldenAgeThreshold - happinessTotal) / happinessPerTurn);
             this.celebrationRing.setAttribute('value', ((happinessTotal / nextGoldenAgeThreshold) * 100).toString());
+            this.celebrationRing.classList.toggle('golden-age', false);
             this.updateTurnCounter(this.celebrationCounter, turnsToNextGoldenAge);
+            this.celebrationCounter.classList.toggle('text-secondary', false);
         }
     },
     updateButtonTimers(ctx) {
