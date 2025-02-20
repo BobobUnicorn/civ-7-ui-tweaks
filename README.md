@@ -6,12 +6,10 @@ Version compatibility: 1.0.1 Patch 3
 
 ## Currently Implemented
 
-- adds a visible countdown/counter for Celebrations
+- adds a visible countdown/counter for Celebrations, and displays which bonus you've picked.
 
 ![In Celebration](screenshots/celebration-active.png)
 ![Not in Celebration](screenshots/celebration-inactive.png)
-
-Note: it doesn't seem currently easily possible to determine which type of celebration bonus you've selected. This is marked as a future improvement.
 
 - adds an icon on the diplomacy ribbon when a civ is neutral toward you
 
