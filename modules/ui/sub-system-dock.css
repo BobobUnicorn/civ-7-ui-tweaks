@@ -37,7 +37,7 @@
 
 .fxs-ring-meter.celebration {
 	position: absolute;
-	transform: translateY(75%);
+	transform: translateX(.1rem) translateY(75%);
 	width: 2.3rem;
 	height: 2.3rem;
 }
