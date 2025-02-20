@@ -26,6 +26,16 @@
 				</UIScripts>
 			</Actions>
 		</ActionGroup>
+		<ActionGroup id="civ-leader-tooltips" scope="shell" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>modules/ui/civ-leader-tooltips.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
 		<ActionGroup id="sub-system-dock" scope="game" criteria="always">
 			<Properties>
 				<LoadOrder>100</LoadOrder>
