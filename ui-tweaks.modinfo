@@ -16,6 +16,16 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
+		<ActionGroup id="textbox-focus" scope="shell" criteria="always">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UIScripts>
+					<Item>modules/ui/textbox-focus.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
 		<ActionGroup id="sub-system-dock" scope="game" criteria="always">
 			<Properties>
 				<LoadOrder>100</LoadOrder>
