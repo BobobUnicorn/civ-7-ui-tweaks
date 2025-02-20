@@ -2,7 +2,7 @@
 
 This is essentially a small collection of minor UI issues that have affected me during normal gameplay and will be updated occasionally.
 
-Version compatibility: 1.0.3
+Version compatibility: 1.0.1 Patch 3
 
 ## Currently Implemented
 
