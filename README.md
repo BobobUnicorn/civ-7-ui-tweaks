@@ -16,3 +16,5 @@ Note: it doesn't seem currently easily possible to determine which type of celeb
 - adds an icon on the diplomacy ribbon when a civ is neutral toward you
 
 ![Diplomacy ribbon](screenshots/diplo-ribbon.png)
+
+- makes textboxes not show the caret unless focused (e.g. in the Join Code dialog)
