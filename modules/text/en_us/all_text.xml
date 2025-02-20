@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Replace Tag="LOC_OPTIONS_QUICK_MOVEMENT">
+			<Text>Quick Movement</Text>
+		</Replace>
+	</EnglishText>
+</Database>

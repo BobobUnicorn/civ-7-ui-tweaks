@@ -8,6 +8,7 @@
 		<AffectsSavedGames>0</AffectsSavedGames>
 	</Properties>
 	<Dependencies>
+		<Mod id="core" title="LOC_MODULE_CORE_NAME" />
 		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
 	</Dependencies>
 	<ActionCriteria>
@@ -16,9 +17,23 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
+		<ActionGroup id="options-quick-combat" scope="game" criteria="always">
+			<Actions>
+				<UIScripts>
+					<Item>modules/ui/options.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="options-quick-combat-shell" scope="shell" criteria="always">
+			<Actions>
+				<UIScripts>
+					<Item>modules/ui/options.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
 		<ActionGroup id="sub-system-dock" scope="game" criteria="always">
 			<Properties>
-				<LoadOrder>100</LoadOrder>
+				<LoadOrder>2</LoadOrder>
 			</Properties>
 			<Actions>
 				<UIScripts>
@@ -28,7 +43,7 @@
 		</ActionGroup>
 		<ActionGroup id="diplo-ribbon-neutral" scope="game" criteria="always">
 			<Properties>
-				<LoadOrder>101</LoadOrder>
+				<LoadOrder>3</LoadOrder>
 			</Properties>
 			<Actions>
 				<UIScripts>
